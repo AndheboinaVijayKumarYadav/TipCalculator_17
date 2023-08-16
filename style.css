@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-blue);
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+.main-container {
+    width: 40rem;
+    background-color: var(--white);
+}
+
+header h1 {
+    font-size: 4rem;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--color-sec);
+    padding: 1rem;
+}
+
+.main-container .form , .main-container .form > * {
+
+    width: 90%;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.main-container .form .form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input ,
+select {
+    font-size: 1.6rem;
+    padding: 0.7rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+    text-align: right;
+    border: 1px solid var(--grey);
+}
+
+.main-container .form .btn {
+    margin: 7px 0;
+    background-color: var(--color-primary);
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.main-container .form .btn:hover {
+    background-color: var(--color-sec);
+    transform: scale(1.03);
+}
+
+.main-container .form .error {
+    color: red;
+    display: none;
+}
+
+.main-container .result {
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-container .result > *{
+    background-color: var(--grey);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.main-container .result .total {
+    color: red;
+}
